@@ -40,15 +40,15 @@ def main():
     summary = eda.summarize()
     pprint(summary)
 
-    # pipeline = Pipeline().add(normalize).add(profiling).add(predict_stub)
+    pipeline = Pipeline().add(normalize).add(profiling).add(predict_stub)
 
-    # orch = Orchestrator(pipeline)
-    # orch.add_source(csv_loader).add_source(sensor_loader)
-    # orch.start()
+    orch = Orchestrator(pipeline)
+    orch.add_source(csv_loader).add_source(sensor_loader)
+    orch.start()
 
-    # # later
-    # time.sleep(15)
-    # orch.stop()
+    # later
+    time.sleep(15)
+    orch.stop()
 
 if __name__ == "__main__":
     main()
