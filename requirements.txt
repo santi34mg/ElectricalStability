@@ -3,3 +3,4 @@ pyarrow
 seaborn
 matplotlib
 scikit-learn
+tensorflow
