@@ -2,3 +2,4 @@ pandas
 pyarrow
 seaborn
 matplotlib
+scikit-learn
